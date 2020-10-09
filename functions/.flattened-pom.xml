@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.vmware.dmfrey</groupId>
+    <artifactId>demo-parent</artifactId>
+    <version>1.0.0-RELEASE</version>
+  </parent>
+  <groupId>com.vmware.dmfrey</groupId>
+  <artifactId>functions-parent</artifactId>
+  <version>0.0.2-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>functions</name>
+  <description>Demo project for Spring Boot</description>
+  <modules>
+    <module>consumer</module>
+    <module>supplier</module>
+  </modules>
+  <properties>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <revision>0.0.2-SNAPSHOT</revision>
+  </properties>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+</project>
